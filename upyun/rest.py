@@ -119,7 +119,7 @@ class UpYunRest(object):
         if isinstance(keys, builtin_str):
             keys = [keys]
         if isinstance(keys, list):
-            urlfmt = 'http://%s/%s'
+            urlfmt = 'https://%s/%s'
             urlstr = '\n'.join([urlfmt % (domain, k if k[0] != '/' else k[1:])
                                 for k in keys]) + '\n'
         else:
